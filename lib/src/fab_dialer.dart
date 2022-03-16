@@ -45,7 +45,7 @@ class FabDialerState extends State<FabDialer> with TickerProviderStateMixin {
   void setFabMenu(List<FabMiniMenuItem> fabMenuList) {
     List<FabMenuMiniItemWidget> fabMenuItems = new List();
     for (int i = 0; i < _fabMiniMenuItemList.length; i++) {
-      fabMenuItems.add(new FabMenuMiniItemWidget(
+      fabMenuItems.add(FabMenuMiniItemWidget(
         tooltip: _fabMiniMenuItemList[i].tooltip,
         text: _fabMiniMenuItemList[i].text,
         elevation: _fabMiniMenuItemList[i].elevation,
@@ -85,7 +85,7 @@ class FabDialerState extends State<FabDialer> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return new Container(
-        margin: new EdgeInsets.symmetric(vertical: 16.0, horizontal: 16.0),
+        //margin: new EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
         child: new Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[

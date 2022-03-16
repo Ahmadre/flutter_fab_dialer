@@ -7,7 +7,7 @@ typedef void HideWidget();
 class FabMiniMenuItem {
   double elevation;
   String text;
-  Icon icon;
+  Widget icon;
   ImageProvider image;
   Color fabColor;
   Color chipColor;
@@ -77,7 +77,7 @@ class FabMenuMiniItemWidget extends StatelessWidget {
       : super(key: key);
   final double elevation;
   final String text;
-  final Icon icon;
+  final Widget icon;
   final ImageProvider image;
   final Color fabColor;
   final Color chipColor;
@@ -119,7 +119,7 @@ class FabMenuMiniItemWidget extends StatelessWidget {
                     child: _getChip(),
                   ),
                   new Padding(
-                      padding: const EdgeInsets.only(left: 10.0),
+                      padding: const EdgeInsets.only(left: 12.5),
                       child: _getFloatingActionButton()),
                 ],
               ),
@@ -257,7 +257,7 @@ class FabMenuMiniItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Container(
-      margin: new EdgeInsets.symmetric(vertical: 5.0, horizontal: 8.0),
+      margin: new EdgeInsets.symmetric(vertical: 5.0, horizontal: 5.0),
       child: new Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
